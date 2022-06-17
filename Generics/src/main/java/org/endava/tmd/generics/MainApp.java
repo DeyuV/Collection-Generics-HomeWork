@@ -25,11 +25,17 @@ public class MainApp {
     }
 
     static <T> int countPrimeNumbers(List<T> lista){
-        int cnt = 0;
+        int cnt = 0, a;
         boolean ok;
 
         for(T element : lista){
-            int a = Integer.parseInt(element.toString());
+            try {
+                a = Integer.parseInt(element.toString());
+            }catch(Exception e){
+                System.out.println("Un cuvant a fost introdus in lista de numere");
+                continue;
+            }
+
             ok = true;
 
             for(int i = 2; i <= a / 2; i++){
@@ -57,7 +63,7 @@ public class MainApp {
 
         System.out.println("----------");
 
-        List<Integer> lista2 = Arrays.asList(1, 2, 3, 4, 5, 6);
+        List<String> lista2 = Arrays.asList("1", "Ana", "3", "4", "5", "6");
 
         print(lista2);
         System.out.println("----------");
