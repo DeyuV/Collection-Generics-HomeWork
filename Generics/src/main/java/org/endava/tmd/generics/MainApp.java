@@ -38,6 +38,10 @@ public class MainApp {
 
             ok = true;
 
+            if(a == 1){
+                ok = false;
+            }
+
             for(int i = 2; i <= a / 2; i++){
                 if(a % i == 0){
                     ok = false;
@@ -51,7 +55,7 @@ public class MainApp {
         return cnt;
     }
     public static void main(String[] args) {
-        Integer[] lista = {1, 2, 3, 4, 5, 6};
+        Double[] lista = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0};
 
         print(lista);
 
