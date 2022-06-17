@@ -2,7 +2,6 @@ package org.endava.tmd.collections;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class MainApp {
     public static void main(String[] args) {
